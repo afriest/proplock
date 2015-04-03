@@ -1,6 +1,6 @@
 {
     "name": "proplock",
-    "version": "0.1.0",
+    "version": "0.2.4",
     "description": "A utility for preventening data corruption due to propogation in mongodb for the purpose of enhancing concurrency control",
     "main": "index.js",
     "scripts": {
@@ -19,5 +19,8 @@
     "devDependencies": {
         "chai": "^2.2.0",
         "mocha": "^2.2.1"
+    },
+    "dependencies": {
+        "semaphore": "^1.0.2"
     }
 }

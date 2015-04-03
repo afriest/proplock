@@ -23,10 +23,10 @@ A utility for enhancing concurrency control for mongo databases by restricting c
 	});
 
 	/* to enforce concurrency */
-	db.lock();
+	problock.lock(mongoose);
 
 	/* to remove enforcement */
-	db.unlock();
+	proplock.unlock(mongoose);
 </code>
 
 
@@ -43,3 +43,8 @@ Keep your stick on the ice.
 ## Release History
 
 * 0.1.0 Initial release
+* 0.2.0 Integration of enhanced semaphore caching mechanisms
+* 0.2.1 Minor restructuring of db handeling
+* 0.2.2 Change of use of db wrapper class
+* 0.2.3 Modified codebase to use Mongoose instead of general db
+* 0.2.4 Altered semaphore locking structure to use auto-invoking functions
